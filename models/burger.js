@@ -1,7 +1,7 @@
 var orm = require('../config/orm');
 
-orm.selectAll();
+orm.selectAll("");
 
-orm.insertOne();
+orm.insertOne("","");
 
-orm.updateOne();
+orm.updateOne("", "", "");

@@ -1,4 +1,4 @@
-const mysql = require('mysql2');
+const mysql = require('mysql');
 
 var connection = mysql.createConnection({
     host: 'localhost',
@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
 
 connection.connect(function(err){
     if(err){
-        console.error("error connecting: " + err);
+        console.error("error connecting: " + err.stack);
     };
     console.log("connected as id " + connection.threadId);
 });
